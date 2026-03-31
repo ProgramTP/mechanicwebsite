@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact">
+  <section class="page contact-page">
+    <h1>Contact Us</h1>
+
+    <p>
+      Phone: <a href="tel:+1234567890">(123) 456-7890</a><br />
+      Email: <a href="mailto:service@jonestownauto.example">service@jonestownauto.example</a>
+    </p>
+
+    <h2>Visit Us</h2>
+    <address>
+      123 Main Street<br />
+      Jonestown, USA
+    </address>
+
+    <h2>Send a Message</h2>
+    <form class="contact-form" action="mailto:service@jonestownauto.example" method="post" enctype="text/plain">
+      <label>Name<br /><input type="text" name="name" required /></label>
+      <label>Email<br /><input type="email" name="email" required /></label>
+      <label>Message<br /><textarea name="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+</Layout>

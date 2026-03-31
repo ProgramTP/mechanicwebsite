@@ -1,0 +1,189 @@
+/* Basic styles for Jonestown Automotive starter site */
+:root {
+    --brand: #0b4a6f;
+    --accent: #d97706;
+    --muted: #666
+}
+
+* {
+    box-sizing: border-box
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Georgia, Arial, Helvetica, serif;
+    margin: 0;
+    color: #222;
+    line-height: 1.4
+}
+
+/* Make the main container fill available space so footer sits at bottom */
+main.container {
+    flex: 1 0 auto;
+}
+
+.site-header {
+    background: #1e1f21;
+    border-bottom: 1px solid #eee;
+}
+
+/* Top row (contact) and main header share the same container width */
+.header-top,
+.header-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-block: 0.5rem;
+}
+
+.header-top {
+    justify-content: flex-end;
+}
+
+.contact-box {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-item {
+    color: #cbcdd1;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+.header-inner {
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+    color: #cbcdd1;
+    text-decoration: none
+}
+
+.site-nav a {
+    margin-left: 1rem;
+    color: #cbcdd1;
+    text-decoration: none
+}
+
+.hero {
+    background: linear-gradient(90deg, #f7fafc, #fff);
+    padding: 3rem 0
+}
+
+.hero-inner {
+    text-align: center
+}
+
+.hero h1 {
+    margin: 0 0 .5rem;
+    font-size: 2rem
+}
+
+.lead {
+    color: var(--muted);
+    margin-bottom: 1rem
+}
+
+.btn {
+    display: inline-block;
+    background: var(--brand);
+    color: #fff;
+    padding: .6rem 1rem;
+    border-radius: 6px;
+    text-decoration: none
+}
+
+.overview .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0
+}
+
+.card {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eee
+}
+
+.page {
+    padding: 2rem 0
+}
+
+.services-list {
+    list-style: none;
+    padding: 0
+}
+
+.services-list li {
+    padding: .5rem 0;
+    border-bottom: 1px dashed #eee
+}
+
+.site-footer {
+    background: #fafafa;
+    border-top: 1px solid #eee;
+    padding: 1rem 0;
+    margin-top: 2rem
+}
+
+.site-footer {
+    flex-shrink: 0;
+    color: black;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem
+}
+
+.contact-form label {
+    display: block;
+    margin: .5rem 0
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px
+}
+
+.contact-link {
+    color: blue;
+}
+
+@media (max-width:640px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .site-nav a {
+        margin-left: 0;
+        margin-right: 1rem
+    }
+}
