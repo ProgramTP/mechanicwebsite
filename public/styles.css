@@ -84,6 +84,10 @@ main.container {
     text-decoration: none
 }
 
+.site-nav a:hover {
+    color: white;
+}
+
 .hero {
     background: linear-gradient(90deg, #f7fafc, #fff);
     padding: 3rem 0
@@ -109,7 +113,15 @@ main.container {
     color: #fff;
     padding: .6rem 1rem;
     border-radius: 6px;
-    text-decoration: none
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background: #ea580c;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .overview .grid {
@@ -124,6 +136,10 @@ main.container {
     background: #fff;
     border-radius: 8px;
     border: 1px solid #eee
+}
+
+.image-container {
+    border: 1px solid black;
 }
 
 .page {
